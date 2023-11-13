@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useDataContext } from "../Contexts/DataContext";
 import { DateInput } from "./DateInput";
 
 export const DateRange = () => {
-  const [start, setStart] = useState("");
-  const [final, setFinal] = useState("");
+  const { start, setStart, final, setFinal, data } = useDataContext();
+
+  if (data) console.log(data)
 
   return (
     <form onSubmit={(e) => e.preventDefault()}>
