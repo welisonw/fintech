@@ -1,0 +1,23 @@
+:root {
+  --color-1: #463220;
+  --color-2: #66593C;
+  --color-3: #eceadd;
+  --color-4: #f7f8f5;
+  --color-5: #ffffff;
+
+  --gap-s: .625rem;
+  --gap: 1.25rem;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  color: var(--color-2);
+  background-color: var(--color-4);
+}
+
+.container {
+  display: grid;
+  padding: var(--gap);
+  gap: var(--gap);
+}
