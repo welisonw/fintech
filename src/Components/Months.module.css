@@ -1,0 +1,8 @@
+.flex {
+  display: flex;
+  gap: var(--gap);
+}
+
+.flex>* {
+  flex: 1;
+}
