@@ -1,3 +1,5 @@
+import styles from "./MonthButton.module.css";
+
 function nameOfTheMonth(month: number) {
   const date = new Date();
 
@@ -7,5 +9,5 @@ function nameOfTheMonth(month: number) {
 }
 
 export const MonthButton = ({ month }: { month: number }) => {
-  return <button>{nameOfTheMonth(month)}</button>;
+  return <button className={styles.button}>{nameOfTheMonth(month)}</button>;
 };
