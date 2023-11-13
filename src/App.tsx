@@ -1,11 +1,11 @@
-
-import './Styles.css';
+import { DataContextProvider } from "./Contexts/DataContext";
+import "./Styles.css";
 
 function App() {
   return (
-    <div>
-
-    </div>
+    <DataContextProvider>
+      <h1>Hello, World</h1>
+    </DataContextProvider>
   );
 }
 
