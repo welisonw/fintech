@@ -1,4 +1,5 @@
 import { ComponentProps } from "react";
+import styles from "./DateInput.module.css";
 
 interface DateInputProps extends ComponentProps<"input"> {
   type: string;
@@ -9,8 +10,8 @@ interface DateInputProps extends ComponentProps<"input"> {
 export const DateInput = ({ type, id, label, ...props }: DateInputProps) => {
   return (
     <div>
-      <label htmlFor={id}>{label}</label>
-      <input type={type} name={id} id={id} {...props} />
+      <label htmlFor={id} className={styles.label}>{label}</label>
+      <input type={type} name={id} id={id} {...props} className={styles.input}/>
     </div>
   );
 };
