@@ -8,10 +8,10 @@ import {
 } from "react";
 import { useFetch } from "../Hooks/useFetch";
 import { getNumberOfPastDays } from "../utils/getNumberOfPastDays";
-import { VendaProps } from "../interfaces/VendaProps";
+import { SaleProps } from "../interfaces/SaleProps";
 
 interface DataContextProps {
-  data: VendaProps[] | null;
+  data: SaleProps[] | null;
   loading: boolean;
   error: string | null;
   start: string;
@@ -23,18 +23,18 @@ interface DataContextProps {
 const DataContext = createContext<DataContextProps | null>(null);
 
 export const DataContextProvider = ({ children }: PropsWithChildren) => {
-  const NUMBER_OF_PAST_DAYS = 30;  // 30 days ago
+  const NUMBER_OF_PAST_DAYS = 30; // 30 days ago
 
   const [start, setStart] = useState(getNumberOfPastDays(NUMBER_OF_PAST_DAYS));
-  const [final, setFinal] = useState(getNumberOfPastDays(0)); 
+  const [final, setFinal] = useState(getNumberOfPastDays(0));
 
   const BASE_URL = "https://data.origamid.dev/vendas/";
 
-  const { data, loading, error } = useFetch<VendaProps[]>(
+  const { data, loading, error } = useFetch<SaleProps[]>(
     `${BASE_URL}?inicio=${start}&final=${final}`
   );
 
-    return (
+  return (
     <DataContext.Provider
       value={{ data, loading, error, start, setStart, final, setFinal }}
     >

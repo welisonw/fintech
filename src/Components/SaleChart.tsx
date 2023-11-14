@@ -1,4 +1,4 @@
-import { VendaProps } from "../interfaces/VendaProps";
+import { SaleProps } from "../interfaces/SaleProps";
 import {
   CartesianGrid,
   Legend,
@@ -11,7 +11,7 @@ import {
 } from "recharts";
 import { transformData } from "../utils/transformData";
 
-export const SaleChart = ({ data }: { data: VendaProps[] }) => {
+export const SaleChart = ({ data }: { data: SaleProps[] }) => {
   const transformedData = transformData(data);
 
   return (

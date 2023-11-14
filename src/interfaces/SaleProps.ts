@@ -1,5 +1,5 @@
 
-export interface VendaProps {
+export interface SaleProps {
   id: string;
   nome: string;
   preco: number;
