@@ -1,7 +1,8 @@
+import "./Styles.css";
 import { Header } from "./Components/Header";
 import { SalesSummary } from "./Pages/SalesSummary";
 import { DataContextProvider } from "./Contexts/DataContext";
-import "./Styles.css";
+import { Sales } from "./Pages/Sales";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <h1>Hello, World</h1>
         <Header />
         <SalesSummary />
+        <Sales />
       </div>
     </DataContextProvider>
   );
