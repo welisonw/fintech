@@ -1,5 +1,5 @@
 import { Header } from "./Components/Header";
-import { SalesSummary } from "./Components/SalesSummary";
+import { SalesSummary } from "./Pages/SalesSummary";
 import { DataContextProvider } from "./Contexts/DataContext";
 import "./Styles.css";
 
