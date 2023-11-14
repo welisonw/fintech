@@ -27,7 +27,7 @@ export const SalesSummary = () => {
               .toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}
           </span>
         </div>
-        
+
         <div className={styles.box}>
           <h2>Total em Processamento</h2>
           <span>
