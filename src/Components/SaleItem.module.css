@@ -1,0 +1,22 @@
+
+.sale {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: var(--gap);
+  align-items: center;
+  margin-bottom: var(--gap-s);
+
+  padding: var(--gap);
+  border-radius: var(--gap);
+  background-color: var(--color-5);
+}
+
+.sale div:last-child {
+  justify-self: end;
+}
+
+.link {
+  font-family: monospace;
+  text-decoration: none;
+  color: inherit;
+}
