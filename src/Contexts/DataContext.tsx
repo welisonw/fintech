@@ -8,19 +8,10 @@ import {
 } from "react";
 import { useFetch } from "../Hooks/useFetch";
 import { getNumberOfPastDays } from "../utils/getNumberOfPastDays";
-
-interface VendasProps {
-  id: string;
-  nome: string;
-  preco: number;
-  status: "pago" | "processando" | "falha";
-  pagamento: "boleto" | "cartao" | "pix";
-  parcelas: number | null;
-  data: string;
-}
+import { VendaProps } from "../interfaces/VendaProps";
 
 interface DataContextProps {
-  data: VendasProps[] | null;
+  data: VendaProps[] | null;
   loading: boolean;
   error: string | null;
   start: string;
@@ -39,7 +30,7 @@ export const DataContextProvider = ({ children }: PropsWithChildren) => {
 
   const BASE_URL = "https://data.origamid.dev/vendas/";
 
-  const { data, loading, error } = useFetch<VendasProps[]>(
+  const { data, loading, error } = useFetch<VendaProps[]>(
     `${BASE_URL}?inicio=${start}&final=${final}`
   );
 
