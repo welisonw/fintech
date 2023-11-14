@@ -1,0 +1,14 @@
+.daterange {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+  margin-bottom: var(--gap);
+}
+
+.h1 {
+  font-weight: 600;
+  margin: 0;
+  padding: var(--gap);
+  border-radius: var(--gap);
+  background-color: var(--color-3);
+}
