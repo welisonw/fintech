@@ -5,6 +5,7 @@ import { SalesSummary } from "./Pages/SalesSummary";
 import { DataContextProvider } from "./Contexts/DataContext";
 import { Sales } from "./Pages/Sales";
 import { SideNav } from "./Components/SideNav";
+import { Sale } from "./Pages/Sale";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Routes>
               <Route path="/" element={<SalesSummary />} />
               <Route path="/sales" element={<Sales />} />
+              <Route path="/sales/:id" element={<Sale />} />
             </Routes>
           </main>
         </div>

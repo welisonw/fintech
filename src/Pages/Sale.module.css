@@ -1,0 +1,7 @@
+
+.sale {
+  padding: var(--gap);
+  border-radius: var(--gap);
+  background-color: var(--color-5);
+  margin-bottom: var(--gap);
+}
