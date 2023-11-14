@@ -1,4 +1,5 @@
 import { Header } from "./Components/Header";
+import { SalesSummary } from "./Components/SalesSummary";
 import { DataContextProvider } from "./Contexts/DataContext";
 import "./Styles.css";
 
@@ -8,6 +9,7 @@ function App() {
       <div className="container">
         <h1>Hello, World</h1>
         <Header />
+        <SalesSummary />
       </div>
     </DataContextProvider>
   );
