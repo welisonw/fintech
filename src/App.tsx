@@ -3,15 +3,18 @@ import { Header } from "./Components/Header";
 import { SalesSummary } from "./Pages/SalesSummary";
 import { DataContextProvider } from "./Contexts/DataContext";
 import { Sales } from "./Pages/Sales";
+import { SideNav } from "./Components/SideNav";
 
 function App() {
   return (
     <DataContextProvider>
       <div className="container">
-        <h1>Hello, World</h1>
-        <Header />
-        <SalesSummary />
-        <Sales />
+        <SideNav />
+        <main>
+          <Header />
+          <SalesSummary />
+          <Sales />
+        </main>
       </div>
     </DataContextProvider>
   );

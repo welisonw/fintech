@@ -20,4 +20,5 @@ body {
   display: grid;
   padding: var(--gap);
   gap: var(--gap);
+  grid-template-columns: 15rem auto;
 }
