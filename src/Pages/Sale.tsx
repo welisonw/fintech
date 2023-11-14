@@ -2,15 +2,17 @@ import styles from "./Sale.module.css";
 import { useParams } from "react-router-dom";
 import { useFetch } from "../Hooks/useFetch";
 import { VendaProps } from "../interfaces/VendaProps";
+import { Loading } from "../Components/Loading";
 
 interface VendaPropsOmitDate extends Omit<VendaProps, "data"> {}
 
 export const Sale = () => {
   const { id } = useParams();
-  const { data } = useFetch<VendaPropsOmitDate>(
+  const { data, loading } = useFetch<VendaPropsOmitDate>(
     `https://data.origamid.dev/vendas/${id}`
   );
 
+  if (loading) return <Loading />
   if (!data) return null;
   return (
     <div>
