@@ -1,3 +1,4 @@
+import { SaleChart } from "../Components/SaleChart";
 import { useDataContext } from "../Contexts/DataContext";
 import styles from "./SalesSummary.module.css";
 
@@ -36,6 +37,10 @@ export const SalesSummary = () => {
               .toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}
           </span>
         </div>
+      </div>
+
+      <div className={`${styles.box} ${styles.marginBottom}`}>
+        <SaleChart data={data} />
       </div>
     </section>
   );
