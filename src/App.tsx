@@ -1,4 +1,5 @@
 import "./Styles.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header } from "./Components/Header";
 import { SalesSummary } from "./Pages/SalesSummary";
 import { DataContextProvider } from "./Contexts/DataContext";
@@ -7,16 +8,20 @@ import { SideNav } from "./Components/SideNav";
 
 function App() {
   return (
-    <DataContextProvider>
-      <div className="container">
-        <SideNav />
-        <main>
-          <Header />
-          <SalesSummary />
-          <Sales />
-        </main>
-      </div>
-    </DataContextProvider>
+    <BrowserRouter>
+      <DataContextProvider>
+        <div className="container">
+          <SideNav />
+          <main>
+            <Header />
+            <Routes>
+              <Route path="/" element={<SalesSummary />} />
+              <Route path="/sales" element={<Sales />} />
+            </Routes>
+          </main>
+        </div>
+      </DataContextProvider>
+    </BrowserRouter>
   );
 }
 
