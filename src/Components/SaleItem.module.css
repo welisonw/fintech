@@ -5,6 +5,11 @@
   gap: var(--gap);
   align-items: center;
   margin-bottom: var(--gap-s);
+  
+  text-decoration: none;
+  font-family: monospace;
+  font-size: .875rem;
+  color: inherit;
 
   padding: var(--gap);
   border-radius: var(--gap);
@@ -15,11 +20,6 @@
   justify-self: end;
 }
 
-.link {
-  font-family: monospace;
-  text-decoration: none;
-  color: inherit;
-}
 
 @media screen and (max-width: 48rem) {
   .sale {
