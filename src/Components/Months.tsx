@@ -4,6 +4,7 @@ import { MonthButton } from "./MonthButton";
 export const Months = () => {
   return (
     <div className={styles.flex}>
+      <MonthButton month={-3} />
       <MonthButton month={-2} />
       <MonthButton month={-1} />
       <MonthButton month={0} />
