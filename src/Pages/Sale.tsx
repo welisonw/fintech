@@ -27,7 +27,7 @@ export const Sale = () => {
       </div>
       <div className={styles.sale}>Status: {data.status}</div>
       <div className={styles.sale}>Pagamento: {data.pagamento}</div>
-      <div className={styles.sale}>Parcelas: {data.parcelas}</div>
+      <div className={styles.sale}>Parcelas: {data.parcelas ? data.parcelas : 1}</div>
     </div>
   );
 };
