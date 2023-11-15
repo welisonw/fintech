@@ -13,3 +13,9 @@
 .flex > * {
   flex: 1;
 }
+
+@media screen and (max-width: 48rem) {
+  .flex {
+    flex-direction: column;
+  }
+}

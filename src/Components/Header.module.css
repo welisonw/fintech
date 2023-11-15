@@ -12,3 +12,14 @@
   border-radius: var(--gap);
   background-color: var(--color-3);
 }
+
+
+@media screen and (max-width: 64rem) {
+  .daterange {
+    grid-template-columns: 1fr;
+  }
+
+  .daterange *:last-child {
+    grid-row: 1;
+  }
+}

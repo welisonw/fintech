@@ -1,11 +1,8 @@
 
-.summary {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
 .flex {
   display: flex;
+  font-size: 1.5rem;
+  font-weight: 600;
   gap: var(--gap);
   margin-bottom: var(--gap);
 }
@@ -29,4 +26,16 @@ h2 {
 
 .marginBottom {
   margin-bottom: var(--gap);
+}
+
+@media screen and (max-width: 64rem) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .flex {
+    flex-direction: column;
+  }
 }

@@ -1,6 +1,4 @@
 .sidenav {
-
-
   padding: var(--gap);
   border-radius: var(--gap);
   background-color: var(--color-3);
@@ -40,4 +38,15 @@
 
 .sidenav li:hover span {
   background-color: var(--color-3);
+}
+
+@media screen and (max-width: 48rem) {
+  .sidenav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sidenav li a {
+    font-size: .875rem;
+  }
 }

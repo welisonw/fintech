@@ -22,3 +22,14 @@ body {
   gap: var(--gap);
   grid-template-columns: 15rem auto;
 }
+
+@media screen and (max-width: 48rem) {
+  :root {
+    --gap-s: .5rem;
+    --gap: .75rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

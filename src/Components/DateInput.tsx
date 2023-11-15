@@ -9,7 +9,7 @@ interface DateInputProps extends ComponentProps<"input"> {
 
 export const DateInput = ({ type, id, label, ...props }: DateInputProps) => {
   return (
-    <div>
+    <div className={styles.flex}>
       <label htmlFor={id} className={styles.label}>{label}</label>
       <input type={type} name={id} id={id} {...props} className={styles.input}/>
     </div>

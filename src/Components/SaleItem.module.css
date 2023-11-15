@@ -20,3 +20,13 @@
   text-decoration: none;
   color: inherit;
 }
+
+@media screen and (max-width: 48rem) {
+  .sale {
+    grid-template-columns: 1fr;
+  }
+
+  .sale div:last-child {
+    justify-self: start;
+  }
+}
