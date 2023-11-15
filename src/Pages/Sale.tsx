@@ -16,18 +16,18 @@ export const Sale = () => {
   if (!data) return null;
   return (
     <div>
-      <div className={styles.sale}>ID: {data.id}</div>
-      <div className={styles.sale}>Nome: {data.nome}</div>
+      <div className={styles.sale}><strong>ID:</strong> {data.id}</div>
+      <div className={styles.sale}><strong>Nome:</strong> {data.nome}</div>
       <div className={styles.sale}>
-        Preço:{" "}
+        <strong>Preço:</strong>{" "}
         {data.preco.toLocaleString("pt-BR", {
           style: "currency",
           currency: "BRL",
         })}
       </div>
-      <div className={styles.sale}>Status: {data.status}</div>
-      <div className={styles.sale}>Pagamento: {data.pagamento}</div>
-      <div className={styles.sale}>Parcelas: {data.parcelas ? data.parcelas : 1}</div>
+      <div className={styles.sale}><strong>Status:</strong> {data.status}</div>
+      <div className={styles.sale}><strong>Pagamento:</strong> {data.pagamento}</div>
+      <div className={styles.sale}><strong>Parcelas:</strong> {data.parcelas ? data.parcelas : 1}</div>
     </div>
   );
 };
