@@ -4,7 +4,7 @@ O projeto **Fintech** foi desenvolvido durante o curso de React com TypeScript d
 
 Com consumo de uma API de vendas da própria plataforma do curso, a aplicação simula um dashboard com o faturamento de uma fintech. Nele é possível filtrar dados de vendas de um determinado período. Também é possível consultar detalhes individuais de cada venda.
 
-#### Acesse a aplicação clicando [aqui](https://dashboard-fintech-origamid.vercel.app/)
+#### Acesse a aplicação clicando [*aqui*](https://dashboard-fintech-origamid.vercel.app/).
 
 
 ## 🖼️ Preview
@@ -60,3 +60,8 @@ yarn run dev
 
 # A aplicação estará disponível em http://localhost:5173.
 ```
+
+## 📝 Licença
+Esse projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+
